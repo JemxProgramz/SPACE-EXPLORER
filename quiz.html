@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Space Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="quiz">
+  <div class="space-bg" aria-hidden="true"><span class="stars s1"></span><span class="stars s2"></span><span class="stars s3"></span></div>
+  <header class="site-header"><a class="brand" href="index.html"><span>SPACE</span> EXPLORER</a><button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="planets.html">Planets</a><a href="videos.html">Videos</a><a href="gallery.html">Gallery</a><a href="quiz.html" class="active">Quiz</a><a href="planets.html#mission">Mission</a></nav></header>
+  <main>
+    <section class="page-hero compact"><p class="eyebrow">Interactive Quiz</p><h1>Solar System Challenge</h1><p>Answer 10 questions and receive instant feedback after every choice.</p></section>
+    <section class="quiz-shell" aria-live="polite">
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-top"><span id="questionNumber">Question 1 of 10</span><span id="quizScore">Score: 0</span></div>
+        <div class="progress-track"><span id="quizProgress"></span></div>
+        <h2 id="questionText"></h2>
+        <div id="answerList" class="answer-list"></div>
+        <div id="feedback" class="feedback" hidden></div>
+        <button id="nextQuestion" class="btn btn-primary" type="button" hidden>Next Question</button>
+      </div>
+      <div class="quiz-card result-card" id="resultCard" hidden>
+        <div class="success-burst" aria-hidden="true"></div>
+        <h2>Quiz Complete</h2>
+        <p>Your Score:</p>
+        <strong id="finalScore"></strong>
+        <p id="scoreMessage"></p>
+        <button id="tryAgain" class="btn btn-primary" type="button">&#128260; Try Again</button>
+      </div>
+    </section>
+  </main>
+  <aside class="audio-panel" aria-label="Audio controls"><button class="sound-toggle small-btn" type="button" aria-pressed="false">&#128266; Sound OFF</button><label>Volume <input class="volume-slider" type="range" min="0" max="100" value="55"></label></aside>
+  <footer class="site-footer"><h2>SPACE EXPLORER</h2><p>Explore. Discover. Learn.</p><div class="footer-links"><a href="planets.html">Explore</a><a href="videos.html">Multimedia</a><a href="quiz.html">Quiz</a><a href="planets.html#mission">Mission</a></div><small>&copy; 2026 Space Explorer | Educational Multimedia Assignment</small></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

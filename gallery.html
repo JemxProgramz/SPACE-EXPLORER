@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Space Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+  <div class="space-bg" aria-hidden="true"><span class="stars s1"></span><span class="stars s2"></span><span class="stars s3"></span></div>
+  <header class="site-header"><a class="brand" href="index.html"><span>SPACE</span> EXPLORER</a><button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="planets.html">Planets</a><a href="videos.html">Videos</a><a href="gallery.html" class="active">Gallery</a><a href="quiz.html">Quiz</a><a href="planets.html#mission">Mission</a></nav></header>
+  <main>
+    <section class="page-hero compact"><p class="eyebrow">Responsive Images</p><h1>Space Image Gallery</h1><p>Open each image in a fullscreen lightbox with previous and next navigation.</p></section>
+    <section class="section"><div class="gallery-grid" id="galleryGrid"></div></section>
+  </main>
+  <div class="modal lightbox" id="galleryModal" role="dialog" aria-modal="true" aria-labelledby="galleryTitle" hidden>
+    <div class="modal-card lightbox-card">
+      <button class="modal-close" type="button" aria-label="Close gallery">&times;</button>
+      <img id="galleryImage" alt="" loading="lazy">
+      <h2 id="galleryTitle"></h2>
+      <p id="galleryDescription"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="prevImage" type="button">Previous</button>
+        <button class="btn btn-ghost" id="nextImage" type="button">Next</button>
+        <button class="btn btn-primary modal-back" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+  <aside class="audio-panel" aria-label="Audio controls"><button class="sound-toggle small-btn" type="button" aria-pressed="false">&#128266; Sound OFF</button><label>Volume <input class="volume-slider" type="range" min="0" max="100" value="55"></label></aside>
+  <footer class="site-footer"><h2>SPACE EXPLORER</h2><p>Explore. Discover. Learn.</p><div class="footer-links"><a href="planets.html">Explore</a><a href="videos.html">Multimedia</a><a href="quiz.html">Quiz</a><a href="planets.html#mission">Mission</a></div><small>&copy; 2026 Space Explorer | Educational Multimedia Assignment</small></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

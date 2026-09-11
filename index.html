@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Explorer | Interactive Solar System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div class="space-bg" aria-hidden="true"><span class="stars s1"></span><span class="stars s2"></span><span class="stars s3"></span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Space Explorer Home"><span>SPACE</span> EXPLORER</a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="planets.html">Planets</a>
+      <a href="videos.html">Videos</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="planets.html#mission">Mission</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">Multimedia Educational Application</p>
+      <h1>SPACE EXPLORER</h1>
+      <p class="hero-subtitle">An Interactive Journey Through Our Solar System</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="planets.html"><span>&#128640;</span> Start Exploring</a>
+        <button class="btn btn-ghost sound-toggle" type="button" aria-pressed="false">&#128266; Sound On/Off</button>
+        <a class="btn btn-ghost" href="planets.html#mission">&#128640; Mission Mode</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Choose your path</p>
+        <h2>Explore Multimedia Learning Zones</h2>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="planets.html"><span class="feature-icon">&#129680;</span><h3>Planets</h3><p>Click planets, inspect data, and track your mission progress.</p></a>
+        <a class="feature-card" href="videos.html"><span class="feature-icon">&#127916;</span><h3>Videos</h3><p>Open embedded YouTube videos for space learning.</p></a>
+        <a class="feature-card" href="gallery.html"><span class="feature-icon">&#128444;</span><h3>Gallery</h3><p>View space images in a responsive gallery and lightbox.</p></a>
+        <a class="feature-card" href="quiz.html"><span class="feature-icon">&#129504;</span><h3>Quiz</h3><p>Test solar system knowledge with instant feedback and scoring.</p></a>
+      </div>
+    </section>
+
+    <section class="section about-project">
+      <div>
+        <p class="eyebrow">About This Project</p>
+        <h2>Built to Demonstrate Multimedia Systems</h2>
+        <p>This project demonstrates the integration of text, graphics, audio, video, animation and user interaction into a single multimedia application.</p>
+      </div>
+      <ul class="check-list" aria-label="Multimedia principles demonstrated">
+        <li>Text</li><li>Images</li><li>Audio</li><li>Video</li><li>Animation</li><li>User interaction</li><li>Navigation</li><li>Interactive quiz</li><li>Multimedia controls</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside class="audio-panel" aria-label="Audio controls">
+    <button class="sound-toggle small-btn" type="button" aria-pressed="false">&#128266; Sound OFF</button>
+    <label>Volume <input class="volume-slider" type="range" min="0" max="100" value="55"></label>
+  </aside>
+
+  <footer class="site-footer">
+    <h2>SPACE EXPLORER</h2>
+    <p>Explore. Discover. Learn.</p>
+    <div class="footer-links"><a href="planets.html">Explore</a><a href="videos.html">Multimedia</a><a href="quiz.html">Quiz</a><a href="planets.html#mission">Mission</a></div>
+    <small>&copy; 2026 Space Explorer | Educational Multimedia Assignment</small>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
